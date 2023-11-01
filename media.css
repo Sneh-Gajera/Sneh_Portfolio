@@ -86,6 +86,9 @@
     height: 230px;
     left: 14%;
   }
+  .my_edu {
+    padding-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -134,6 +137,9 @@
   }
   .card_text p {
     font-size: 13px !important;
+  }
+  .my_edu {
+    padding-top: 20px;
   }
 }
 
