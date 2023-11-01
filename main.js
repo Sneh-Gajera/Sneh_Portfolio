@@ -1,5 +1,5 @@
 
-
+// mobile responsive
 $(document).ready(function () {
     $(".humberger i").click(function () {
         $(this).toggleClass("fa-times");
@@ -7,6 +7,12 @@ $(document).ready(function () {
     })
 })
 
+//   active menu 
+$(document).ready(function(){
+  $(".menu a").click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+  })
+})
 
 //sticky navbar
 
