@@ -44,19 +44,4 @@ var typed = new Typed(".element", {
     },
   });
 
-  $(document).ready(function () {
-    $(".work_filter").click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-      const value = $(this).attr("data-filter");
-      if (value == "all") {
-        $(".work_image").show();
-      } else {
-        $(".work_image")
-          .not("." + value)
-          .hide();
-        $(".work_image")
-          .filter("." + value)
-          .show();
-      }
-    });
-  });
+  
