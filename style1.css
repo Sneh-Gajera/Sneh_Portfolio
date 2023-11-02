@@ -38,13 +38,7 @@ flex-direction: column;
 
 }
 
-/* .about_title1 .title_bdr{
-  left: 46%;
-}
-.expert_title .title_bdr{
-  margin-top: 10px;
-  left: 44%;
-} */
+
 .expert_title h1 {
   font-size: 40px;
   text-align: center;
@@ -397,7 +391,8 @@ nav {
 
 /* education */
 .edu_mar {
-  margin-top: 100px;
+  padding-top: 70px;
+  margin-top: 20px;
 }
 .education {
   padding-top: 55px;
@@ -405,9 +400,9 @@ nav {
   background-color: var(--bg-yellow);
   position: relative;
 }
-.my_edu {
+/* .my_edu {
   padding-top: 150px;
-}
+} */
 .education:before {
   content: "";
   background-image: url(img/bg-shape.png);
@@ -434,7 +429,7 @@ nav {
 .edu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 18px;
   border-radius: 10px;
   padding: 15px 20px;
   background: #fff;
@@ -513,40 +508,10 @@ nav {
 .owl-nav{
   display: none;
 }
-/* .owl-next {
-  position: absolute;
-  right: -10%;
-  top: 25%;
-} */
 
-/* .owl-prev {
-  position: absolute;
-  top: 25%;
-  left: -10%;
+.owl-theme .owl-dots {
+  display: none;
 }
-
-.owl-nav span {
-  border-radius: 5px;
-  font-size: 30px;
-  background-color: var(--main-bg);
-  color: #fff;
-  padding: 5px 20px;
-  transition: 0.5s;
-}
-
-.owl-nav span:hover {
-  border-radius: 55%;
-  color: var(--main-bg);
-  background-color: #fff;
-  border: 2px solid var(--main-bg);
-}
-.owl-theme .owl-nav {
-  margin: 0;
-}
-
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: none !important;
-} */
 
 .owl-carousel .item i {
   font-size: 70px;

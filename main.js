@@ -33,13 +33,13 @@ var typed = new Typed(".element", {
     loop: true,
     margin: 10,
     nav: true,
-    dots: false,
+    dots: true,
     autoplay:true,
     autoplaySpeed:1000,
     smartSpeed:500,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
       },
       600: {
         items: 3,
