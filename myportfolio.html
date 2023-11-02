@@ -88,7 +88,7 @@
 
     <!-- hero -->
 
-    <div class="hero"  id="home">
+    <div class="hero" id="home">
       <div class="container">
         <div class="row up_direction">
           <div class="col-lg-6">
@@ -207,7 +207,6 @@
     </div>
 
     <!-- Education -->
-    
 
     <div class="education" id="edu">
       <div class="container">
@@ -377,84 +376,54 @@
         <div class="work_filter">
           <ul>
             <li class="list active" data-filter="all">View All</li>
-            <li class="list" data-filter="web">Web Design</li>
             <li class="list" data-filter="develop">Development</li>
+            <li class="list" data-filter="dash">Dahboard Design</li>
             <li class="list" data-filter="lpage">Landing Page</li>
           </ul>
         </div>
 
         <div class="portfolio">
-        
-            <div class="work_image web">
-              <img src="img/w1.avif" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
+          <div class="work_image dash">
+            <img src="img/pf1.jpg" alt="" />
+            <div class="content">
+              <a href="https://sneh-gajera.github.io/Vibrant_Admin/dashboard.html" target="_blank">View</a>
             </div>
-         
+          </div>
 
-          
-            <div class="work_image develop">
-              <img src="img/w2.jpg" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
+          <div class="work_image develop">
+            <img src="img/pf2_1.jpg" alt="" />
+            <div class="content">
+              <a href="https://sneh-gajera.github.io/Vibrant/" target="_blank">View</a>
             </div>
-         
+          </div>
 
-         
-            <div class="work_image lpage">
-              <img src="img/w3.avif" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
+          <div class="work_image lpage">
+            <img src="img/pf3.jpg" alt="" />
+            <div class="content">
+              <a href="https://sneh-gajera.github.io/Construction/Construction.html" target="_blank">View</a>
             </div>
-         
+          </div>
 
-          
-            <div class="work_image develop">
-              <img src="img/w4.avif" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
+          <div class="work_image develop">
+            <img src="img/pf2_1.jpg" alt="" />
+            <div class="content">
+              <a href="#" target="_blank">View</a>
             </div>
-          
+          </div>
 
-        
-            <div class="work_image develop">
-              <img src="img/w2.jpg" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
+          <div class="work_image develop">
+            <img src="img/pf1.jpg" alt="" />
+            <div class="content">
+              <a href="#" target="_blank">View</a>
             </div>
-          
+          </div>
 
-          
-            <div class="work_image lpage">
-              <img src="img/w3.avif" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
+          <div class="work_image lpage">
+            <img src="img/pf2_1.jpg" alt="" />
+            <div class="content">
+              <a href="#" target="_blank">View</a>
             </div>
-          
-
-         
-            <div class="work_image lpage">
-              <img src="img/w4.avif" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
-            </div>
-         
-
-          
-            <div class="work_image develop" lpage>
-              <img src="img/w1.avif" alt="" />
-              <div class="content">
-                <a href="#"><button>View</button></a>
-              </div>
-            </div>
-         
+          </div>
         </div>
       </div>
     </div>
@@ -515,7 +484,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="">
+            <form action="" >
               <div class="card contact_form">
                 <div class="row">
                   <div class="col-lg-6 mb-4 col-md-6">
@@ -549,6 +518,7 @@
                         type="text"
                         name="mail"
                         class="form-control"
+                        id="mail"
                         required
                       />
                     </div>
@@ -582,7 +552,7 @@
                 </div>
 
                 <div class="about_btn d-flex justify-content-center">
-                  <button class="button">
+                  <button class="button" onsubmit="sendmail()">
                     Send Massage
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                       <path
@@ -678,6 +648,8 @@
     <!-- owl carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script src="main.js" defer></script>
 
     <script>
@@ -697,6 +669,20 @@
           }
         });
       });
+
+      function sendmail() {
+        Email.send({
+
+          // 73581d72-821a-4533-ad20-0e4531aa3479
+          Host: "smtp.elasticemail.com",
+          Username: "psneh849@gmail.com",
+          Password: "3F0D9DAEA2F88596477906675E9BAB61D29D",
+          To: "psneh849@gmail.com",
+          From: document.getElementById('mail'),
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert("success"));
+      }
     </script>
   </body>
 </html>
