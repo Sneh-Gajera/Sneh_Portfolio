@@ -234,16 +234,16 @@
     bottom: -20px;
     left: calc(50% - 20px);
   }
-  .expert{
+  /* .expert{
     text-align: center;
     flex-direction: column;
-  }
+  } */
   .icon_part i{
     width: 70px;
     height: 70px;
     font-size: 30px;
   }
-  .expert .text_part p{
+  /* .expert .text_part p{
     text-align: center !important;
-  }
+  } */
 }
