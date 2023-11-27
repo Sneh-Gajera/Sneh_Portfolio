@@ -1,23 +1,3 @@
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  dots: true,
-  autoplay:true,
-  autoplaySpeed:1000,
-  smartSpeed:500,
-  responsive: {
-    0: {
-      items: 2,
-    },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 6,
-    },
-  },
-});
 
 // mobile responsive
 $(document).ready(function () {
